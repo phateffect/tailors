@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "tailors"
+version = "0.1.0"
+description = ""
+authors = ["ShiWei <shiwei@leyantech.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pydantic = "^2.4.2"
+click = "^8.1.7"
+oss2 = "^2.18.2"
+tqdm = "^4.66.1"
+pydantic-settings = "^2.0.3"
+pillow = "^10.1.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.1.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

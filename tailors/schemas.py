@@ -1,5 +1,7 @@
 from oss2 import Auth, Bucket
-from pydantic import BaseModel, BaseSettings, HttpUrl
+
+from pydantic import BaseModel, HttpUrl
+from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
 class OSSClient(BaseModel):
@@ -17,6 +19,7 @@ class OSSClient(BaseModel):
 class AppSettings(BaseSettings):
     oss: OSSClient
 
-    class Config:
-        env_file = ".env"
-        env_nested_delimiter = "__"
+    model_config = SettingsConfigDict(
+        env_file=".env",
+        env_nested_delimiter="__"
+    )
