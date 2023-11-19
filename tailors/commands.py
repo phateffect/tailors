@@ -2,7 +2,7 @@ import click
 
 from pathlib import Path
 from PIL import Image
-from tailors.compressor import Comporess as ComporessManager
+from .compressor import Comporess as ComporessManager
 
 
 @click.group()
