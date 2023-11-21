@@ -45,7 +45,7 @@ def merge(background_image, images_dir, zip_filename):
                 basename,
                 bg.copy(),
                 Image.open(img_file),
-                (600, 600), # 宽 高
+                (800, 800), # 宽 高
                 (400, 450), # 左 上
             )
 

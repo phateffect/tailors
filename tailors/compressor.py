@@ -7,7 +7,7 @@ class Comporess:
     def __init__(self):
         self.size_limit = 3_000_000
         self.files = {}
-        self.session = new_session("isnet-general-use.onnx")
+        self.session = new_session("isnet-general-use")
 
     def save(self, outfile):
         with ZipFile(outfile, "w", ZIP_BZIP2) as myzip:
